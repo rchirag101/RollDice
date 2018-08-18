@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chirag.animate.MainActivity">
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_android_black_24dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/btnRoll"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="↑"
+        android:textSize="30sp"
+        android:layout_above="@+id/btnLeft"
+        android:layout_alignStart="@+id/img1" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="←"
+        android:textSize="30sp"
+        android:layout_above="@+id/btnDwn"
+        android:layout_toStartOf="@+id/btnUp" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="→"
+        android:textSize="30sp"
+        android:layout_above="@+id/btnDwn"
+        android:layout_toEndOf="@+id/btnUp" />
+
+    <Button
+        android:id="@+id/btnDwn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="↓"
+        android:textSize="30sp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnUp" />
+
+    <ImageView
+        android:id="@+id/imgDice"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/d1"/>
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll Dice"
+        android:layout_below="@+id/lblDiceNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/lblDiceNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="1"
+        android:layout_below="@+id/imgDice"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
